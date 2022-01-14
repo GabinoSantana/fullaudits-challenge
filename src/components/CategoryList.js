@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
-import { BsList, BsLockFill, BsPatchPlus } from 'react-icons/bs';
+import { BsFillPlusSquareFill } from 'react-icons/bs';
 import { Context } from '../App';
 import AddView from './AddView';
 import Category from './Category';
@@ -68,7 +68,7 @@ export default function CategoriesList() {
       {!showAddView && (
         <>
           <button style={{ float: 'right', marginTop: '2em' }} onClick={() => handleShowAddView()}>
-            <BsPatchPlus />
+            <BsFillPlusSquareFill />
           </button>
           <DragDropContext onDragEnd={(result) => handleOnDragEnd(result)}>
             <Droppable droppableId='categories'>
